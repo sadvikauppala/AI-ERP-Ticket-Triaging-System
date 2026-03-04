@@ -11,7 +11,7 @@ export default function TicketForm({ setResult, setLoading }) {
 
     try {
       const response = await fetch(
-        "https://ai-erp-ticket-triaging-system.onrender.com/api/triage",
+        `${import.meta.env.VITE_API_URL}/api/triage`,
         {
           method: "POST",
           headers: {
